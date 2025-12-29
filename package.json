@@ -1,0 +1,28 @@
+{
+  "name": "test-js-workspace-tracing",
+  "version": "0.1.0",
+  "description": "LangGraph TypeScript agent with multi-workspace tracing support",
+  "type": "module",
+  "main": "agent_ts.ts",
+  "scripts": {
+    "dev": "langgraph dev",
+    "test:generic": "npx tsx test_generic.ts",
+    "test:deployment": "echo 'Deploy first with: langgraph dev (or langgraph deploy)'"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.27",
+    "@langchain/langgraph": "^0.2.31",
+    "dotenv": "^16.4.5",
+    "langsmith": "^0.3.79",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+
